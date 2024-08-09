@@ -1,6 +1,12 @@
 #include <iostream>
+#include "util/draw/draw.h"
+#include "util/utime/utime.h"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+using namespace std;
+
+int main(){
+	Time utime;
+	utime.generate_months(1);
+	utime.print();
+	return 0;
 }
